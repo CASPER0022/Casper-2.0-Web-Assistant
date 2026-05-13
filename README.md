@@ -71,5 +71,3 @@ We will build Casper incrementally to ensure a deep understanding of every compo
 - [ ] Connect the frontend to the FastAPI backend to visualize Casper's reasoning steps in real-time.
 
 ---
-
-*This document will serve as our living blueprint as we develop Casper together.*
