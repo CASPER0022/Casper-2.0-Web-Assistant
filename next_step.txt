@@ -1,13 +1,16 @@
-🚀 What is the Next Step?
-I suggest we tackle two exciting updates next:
+1. ⚙️ Adjustable Search Budget Slider
+Allow users to dynamically adjust the Search Limit Budget from the UI (e.g., a slider or dropdown selecting from 1 to 8 searches) instead of hardcoding it to 4. This value would be passed to the backend API.
 
-🛡️ 1. Loop Control (Quick Polish)
-We will introduce a simple counter to our AgentState called loop_count. If Casper searches more than, say, 4 times, we will force it to stop searching, analyze what it has gathered, and write the final summary. This prevents it from running forever and wasting API rate limits.
+2. 📋 One-Click Copy & Export
+Copy to Clipboard: A clean floating button on the Research Summary card to instantly copy the generated markdown.
+Download as PDF/Markdown: Export the summary and the query logs into a neat .md file for offline reading.
+3. 🌐 Web Links & Favicons in Sources
+Currently, the source results are shown as plain text. We can:
 
-🌐 2. Phase 4 & 5: FastAPI Backend & React Web Dashboard!
-Right now, Casper is trapped in our black-and-white command line terminal. Let's build:
+Parse URLs from the DuckDuckGo search outputs and display clickable hyperlinked sources.
+Display the website's favicon (e.g., Google, Wikipedia) next to each source snippet.
+4. 📜 Search History Sidebar
+Keep a history of previous research queries in a collapsible left sidebar (using localStorage so they persist when the page is reloaded). Users can click on a past query to instantly load its final summary without re-running the search.
 
-A FastAPI Server that triggers these research loops.
-A stunning, premium React Dashboard with glassmorphic styles, smooth animations, and a real-time "thought process" log! When Casper searches, you'll see a visual node light up: "Searching Annex III..." -> "Summarizing results...".
-💬 What do you think?
-Would you like to first add the loop_count safety boundary to our Python agent, or are you ready to jump straight into bootstrapping the FastAPI + React Web App?
+5. 🎨 Dark/Light Theme Customizer
+Add a floating theme controller to switch between the premium Neon Glassmorphic Dark Mode (current) and a clean, high-contrast Light Mode suitable for long-form reading.
